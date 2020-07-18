@@ -11,14 +11,14 @@ while True:
     
 
     if tokens[0] in ['q', 'quit']:
-        print("You will exit")
+        print("\nYou will exit")
         break
     else:
         if len(tokens) == 2:
             try:
                 num1 = float(tokens[1])
             except ValueError:
-                print("Value provided is not a number")
+                print("\nValue provided is not a number")
                 continue
         else:
             try:
