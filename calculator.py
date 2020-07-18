@@ -10,16 +10,23 @@ while True:
     tokens = input_string.split(' ')
     
 
-
-    if tokens[0] == 'q':
+    if tokens[0] in ['q', 'quit']:
         print("You will exit")
         break
     else:
         if len(tokens) == 2:
-            num1 = float(tokens[1])
+            try:
+                num1 = float(tokens[1])
+            except ValueError:
+                print("Value provided is not a number")
+                continue
         else:
-            num1 = float(tokens[1])
-            num2 = float (tokens[2])
+            try:
+                num1 = float(tokens[1])
+                num2 = float (tokens[2])
+            except ValueError:
+                print("One or more of the value(s) provided is not a number")
+                continue
 
 
         if(tokens[0] == "+"):
