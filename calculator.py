@@ -17,3 +17,12 @@ while True:
     else:
         if(tokens[0] == "+"):
             print(add(num1, num2))
+        
+        elif(tokens[0] == "-"):
+            print(subtract(num1, num2))
+        
+        elif(tokens[0] == "*"):
+            print(multiply(num1, num2))
+        
+        elif(tokens[0] == "/"):
+            print(divide(num1, num2))
