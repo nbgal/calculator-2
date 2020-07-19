@@ -29,19 +29,19 @@ while True:
             print(subtract(num))
         
         elif(tokens[0] == "*"):
-            print(multiply(num[0], num[1]))
+            print(multiply(num))
         
         elif(tokens[0] == "/"):
-            print(divide(num[0], num[1]))
+            print(divide(num))
 
         elif(tokens[0] == "square"):
-            print(square(num[0]))
+            print(square(num))
         
         elif(tokens[0] == "cube"):
-            print(cube(num[0]))
+            print(cube(num))
         
         elif(tokens[0] == "pow"):
-            print(power(num[0], num[1]))
+            print(power(num))
         
         elif(tokens[0] == "mod"):
-            print(mod(num[0], num[1]))
+            print(mod(num))
