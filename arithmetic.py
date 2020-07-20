@@ -69,3 +69,31 @@ def mod(num):
     for i in range (1, len(num)):
         temp %= num[i]
     return temp
+
+
+
+def add_mult(num):
+    """ Return the sum of num1 and num 2 multiplied by num3"""
+    print(num)
+    value =[]
+    value.append(add(num[0:2]))
+    print(value)
+    for i in range (2,len(num)):
+        print(len(num))
+        print (num[i])
+        value.append(num[i]) 
+        print(value)
+
+    return multiply(value)
+
+
+def add_cubes(num):
+    """Return the sum of the cube of both numbers"""
+    val = 1
+    sum = 0
+
+    for i in range(len(num)):
+        val = cube([num[i]])
+        sum += val
+
+    return sum
